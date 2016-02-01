@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_title"/>
+
+    <EditText
+        android:id="@+id/title_field"
+        android:layout_below="@id/title_label"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/description_label"
+        android:layout_below="@id/title_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_description" />
+
+    <EditText
+        android:id="@+id/description_field"
+        android:layout_below="@id/description_label"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/max_participants_label"
+        android:layout_below="@id/description_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_participants" />
+
+    <EditText
+        android:id="@+id/max_participants_field"
+        android:layout_below="@id/max_participants_label"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/start_date_label"
+        android:layout_below="@id/max_participants_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date" />
+
+    <EditText
+        android:id="@+id/start_date_field"
+        android:inputType="date"
+        android:layout_below="@id/start_date_label"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/start_time_label"
+        android:layout_below="@id/start_date_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_time" />
+
+    <EditText
+        android:id="@+id/start_time_field"
+        android:inputType="time"
+        android:layout_below="@id/start_time_label"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/end_date_label"
+        android:layout_below="@id/start_time_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_date" />
+
+    <EditText
+        android:id="@+id/end_date_field"
+        android:inputType="date"
+        android:layout_below="@id/end_date_label"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/end_time_label"
+        android:layout_below="@id/end_date_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_time" />
+
+    <EditText
+        android:id="@+id/end_time_field"
+        android:inputType="time"
+        android:layout_below="@id/end_time_label"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/save_activity"
+        android:layout_below="@id/end_time_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_activity"
+        android:onClick="saveNewActivity"/>
+
+</RelativeLayout>
