@@ -1,0 +1,1 @@
+This is the android version of the Weekend Activity tracker app for the SSFS Dorm
